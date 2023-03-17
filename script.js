@@ -1,14 +1,20 @@
-function minimumCost(){
-	var res=0;
-	var cost=0;
-	var inputArray=document.getElementById("inputArr").value;
-	inputArray=inputArray.split(',').map(Number);
-	for(let i=0;i<inputArray.length-1;i+=0){
-		if(inputArray.length==0) break;
-		inputArray=inputArray.sort((a,b))=>b-a);
-		res=inputArray.pop()+inputArray.pop();
-		cost+=res;
-		inputArray[inputArray.length]=res;
+function CalculateMinCost(){
+	var inputData= Document querySelector("#repo-lengths");
+	var inputarr= inputData.split(",");
+	
+	for(i=0;i<inputArr.length;i++){
+		inputArr[i]=Number(inputArr[i]);
 	}
-	document.getElementById("result").innerHTML=cost;
-}
+	var cost=0;
+	//inputArr.sort(function(a,b) {return a-b});
+	while (inputArr.length>1) {
+		var newRepo=inputArr[0]+inputArr[1];
+		cost+=newRepo;
+		inputArr.splice(0,2);
+		inputArr.push(newRepo);
+		//inputArr.sort(function(a,b){return a-b});
+		
+	}
+	document.querySelector(#result).Content=cost;
+	})
+
